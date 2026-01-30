@@ -1,101 +1,177 @@
-    /* ヘッダー */
-    header {
-        height: 100vh;
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* 仮の肉画像 */
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+  <HTML>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>至高の焼肉と本場韓国の味 | 焼き肉 カジャ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 基本設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f4f4f4;
+            font-family: 'Noto Serif JP', serif;
+            line-height: 1.8;
+            letter-spacing: 0.1em;
+        }
 
-    .hero-text h1 {
-        font-size: 3.5rem;
-        margin: 0;
-        font-weight: 700;
-    }
+        /* ヘッダー */
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* 仮の肉画像 */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-    .hero-text p {
-        font-size: 1.2rem;
-        margin-top: 20px;
-        color: #d4af37;
-    }
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: 700;
+        }
 
-    /* セクション共通 */
-    section {
-        padding: 100px 20px;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            color: #d4af37;
+        }
 
-    h2 {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 60px;
-        color: #d4af37;
-        position: relative;
-    }
+        /* セクション共通 */
+        section {
+            padding: 100px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
 
-    h2::after {
-        content: "";
-        display: block;
-        width: 50px;
-        height: 1px;
-        background: #d4af37;
-        margin: 20px auto 0;
-    }
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 60px;
+            color: #d4af37;
+            position: relative;
+        }
 
-    /* コンテンツ配置 */
-    .flex-container {
-        display: flex;
-        align-items: center;
-        gap: 50px;
-        flex-wrap: wrap;
-    }
+        h2::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 1px;
+            background: #d4af37;
+            margin: 20px auto 0;
+        }
 
-    .flex-item {
-        flex: 1;
-        min-width: 300px;
-    }
+        /* コンテンツ配置 */
+        .flex-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
 
-    .image-box img {
-        width: 100%;
-        height: auto;
-        border: 1px solid #d4af37;
-        padding: 10px;
-    }
+        .flex-item {
+            flex: 1;
+            min-width: 300px;
+        }
 
-    /* 韓国本場の味セクション */
-    .korean-accent {
-        writing-mode: vertical-rl;
-        font-size: 1.5rem;
-        border-right: 1px solid #d4af37;
-        padding-right: 20px;
-        margin-left: 30px;
-        height: 300px;
-    }
+        .image-box img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #d4af37;
+            padding: 10px;
+        }
 
-    /* 予約ボタン */
-    .btn {
-        display: inline-block;
-        padding: 15px 40px;
-        border: 1px solid #d4af37;
-        color: #d4af37;
-        text-decoration: none;
-        transition: 0.3s;
-        margin-top: 30px;
-    }
+        /* 韓国本場の味セクション */
+        .korean-accent {
+            writing-mode: vertical-rl;
+            font-size: 1.5rem;
+            border-right: 1px solid #d4af37;
+            padding-right: 20px;
+            margin-left: 30px;
+            height: 300px;
+        }
 
-    .btn:hover {
-        background: #d4af37;
-        color: #000;
-    }
+        /* 予約ボタン */
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            border: 1px solid #d4af37;
+            color: #d4af37;
+            text-decoration: none;
+            transition: 0.3s;
+            margin-top: 30px;
+        }
 
-    footer {
-        text-align: center;
-        padding: 50px;
-        background: #000;
-        font-size: 0.8rem;
-    }
-</style>
+        .btn:hover {
+            background: #d4af37;
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            background: #000;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero-text">
+            <h1>焼き肉 カジャ</h1>
+            <p>本場韓国の魂と、厳選和牛が織りなす極上の刻</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>本場韓国、秘伝の味わい</h2>
+        <div class="flex-container">
+            <div class="flex-item korean-accent">
+                至高のキムチとナムル
+            </div>
+            <div class="flex-item">
+                <p>韓国出身のオーナーが、代々伝わる家伝のレシピで毎日仕込む自家製キムチ。
+                厳選された唐辛子と、季節の野菜が織りなす深いコクは、和牛の甘みを最大限に引き出します。</p>
+                <p>一皿のナムルにも妥協を許さない、本場の矜持。肉を待つ時間さえも、美食のひとときへと変えてみせます。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rooms" style="background-color: #0a0a0a;">
+        <h2>四つの静寂</h2>
+        <div class="flex-container" style="flex-direction: row-reverse;">
+            <div class="flex-item">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="高級個室">
+                </div>
+            </div>
+            <div class="flex-item">
+                <h3>完全個室完備（全四室）</h3>
+                <p>喧騒から隔離された上質な空間。接待や記念日、大切な方との語らいにふさわしい、プライバシーを重視した四つの個室をご用意しております。</p>
+                <p>無煙ロースターを完備し、お洋服への香りを気にせずお食事を愉しめます。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="text-align: center;">
+        <h2>ご予約</h2>
+        <p>お客様一人ひとりに最高の状態で提供するため、事前のご予約を推奨しております。</p>
+        <a href="tel:00-0000-0000" class="btn">お電話で予約する</a>
+        <p style="margin-top: 20px; font-size: 0.9rem;">東京都多摩市関戸2-39-9<br>
+        営業時間：17:00 - 23:00<br> 
+        ラストオーダー　フード22:00　ドリンク22:30</p>
+
+    </section>
+
+    <footer>
+        &copy; 2026 焼き肉 カジャ
+    </footer>
+
+</body>
+</html>
