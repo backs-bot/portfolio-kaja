@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f4f4f4;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+}
+
+/* ヘッダー */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #d4af37;
+}
+
+/* セクション共通 */
+section {
+    padding: 100px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bg-dark {
+    background-color: #0a0a0a;
+    max-width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 60px;
+    color: #d4af37;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #d4af37;
+    margin: 20px auto 0;
+}
+
+/* レイアウト */
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.flex-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-item {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #d4af37;
+    padding: 10px;
+}
+
+/* 韓国アクセント（縦書き） */
+.korean-accent {
+    writing-mode: vertical-rl;
+    font-size: 1.5rem;
+    border-right: 1px solid #d4af37;
+    padding-right: 20px;
+    margin-left: 30px;
+    height: 300px;
+}
+
+/* ボタン・装飾 */
+.text-center { text-align: center; }
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background: #d4af37;
+    color: #000;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background: #000;
+    font-size: 0.8rem;
+    border-top: 1px solid #222;
+}
